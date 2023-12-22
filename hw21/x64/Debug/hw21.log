@@ -1,0 +1,18 @@
+﻿  ExtendedChemicalElement.cpp
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\xutility(254,61): error C2280: "ExtendedChemicalElement::ExtendedChemicalElement(const ExtendedChemicalElement &)": предпринята попытка ссылки на удаленную функцию
+C:\Users\BARUX\source\repos\c++_pro\hw 21\hw21\hw21\ExtendedChemicalElement.h(17,1): message : в этом месте создано компилятором: "ExtendedChemicalElement::ExtendedChemicalElement"
+C:\Users\BARUX\source\repos\c++_pro\hw 21\hw21\hw21\ExtendedChemicalElement.h(17,1): message : "ExtendedChemicalElement::ExtendedChemicalElement(const ExtendedChemicalElement &)": функция неявно удалена, так как элемент данных вызывает удаленную или недоступную функцию "std::unique_ptr<ChemicalElementsInformation,std::default_delete<ChemicalElementsInformation>>::unique_ptr(const std::unique_ptr<ChemicalElementsInformation,std::default_delete<ChemicalElementsInformation>> &)".
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(3329,5): message : "std::unique_ptr<ChemicalElementsInformation,std::default_delete<ChemicalElementsInformation>>::unique_ptr(const std::unique_ptr<ChemicalElementsInformation,std::default_delete<ChemicalElementsInformation>> &)": функция явно удалена.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(2104,18): message : выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Construct_in_place<_Ty,_Ty>(_Ty &,_Ty &&) noexcept(false)"
+          with
+          [
+              _Ty=ExtendedChemicalElement
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\memory(2779,46): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::_Ref_count_obj2<ExtendedChemicalElement>::_Ref_count_obj2<_Ty>(_Ty &&)"
+          with
+          [
+              _Ty=ExtendedChemicalElement
+          ]
+C:\Users\BARUX\source\repos\c++_pro\hw 21\hw21\hw21\main.cpp(8,18): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::shared_ptr<ExtendedChemicalElement> std::make_shared<ExtendedChemicalElement,ExtendedChemicalElement>(ExtendedChemicalElement &&)"
+  Создание кода...
